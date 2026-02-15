@@ -1,0 +1,120 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #2c3e50;
+  background-color: #f2f6fa;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #0a5fb4;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #0a5fb4;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu a {
+    margin: 10px 0;
+  }
+}
+
+/* Hero section for homepage */
+.hero {
+  height: 70vh;
+  background: linear-gradient(rgba(242,246,250,0.6), rgba(242,246,250,0.6)),
+              url('images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #2c3e50;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+}
+
+.btn {
+  background-color: #0a5fb4;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #084a8a;
+}
+
+/* Content section */
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
