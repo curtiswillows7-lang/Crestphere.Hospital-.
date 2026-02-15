@@ -91,3 +91,15 @@ footer {
   text-align: center;
   padding: 15px;
 }
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+
+.content p {
+  font-size: 1.05em;
+}
