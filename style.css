@@ -106,3 +106,49 @@ ul li {
 .content p {
   font-size: 1.05em;
 }
+/* Hamburger Menu */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: #ffffff;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #0a5fb4;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+  }
+
+  .nav-menu a {
+    color: white;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+}
