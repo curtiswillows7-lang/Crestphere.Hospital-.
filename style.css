@@ -23,11 +23,22 @@ header {
 }
 
 /* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 18px;
+  margin-left: 25px;
   font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  opacity: 0.85;
 }
 
 nav a:hover {
