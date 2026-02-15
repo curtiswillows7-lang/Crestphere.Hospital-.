@@ -5,10 +5,15 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(rgba(242,246,250,0.9), rgba(242,246,250,0.9)),
+  color: #2c3e50;
+
+  /* Professional overlay + background */
+  background: linear-gradient(rgba(242,246,250,0.85), rgba(242,246,250,0.85)),
               url("images/hospital-bg.png") no-repeat center center fixed;
   background-size: cover;
-  color: #2c3e50;
+
+  /* Smooth scrolling feel */
+  scroll-behavior: smooth;
 }
 
 /* Header */
